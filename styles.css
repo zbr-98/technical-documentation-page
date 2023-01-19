@@ -112,11 +112,17 @@ code{
 }
 @media screen and (max-width: 500px){
       #navbar{
-            display: inline;
-            position: relative;
-            background-color: #7286D3;
-            height:30vh;
-            border-bottom: 2px solid dimgray;
+            visibility: hidden;
+      }
+      .buttons{
+            position:fixed;
+            visibility:visible;
+            display: flex;
+            flex-direction: row;
+            height: 48vh;
+            align-items: flex-end;
+            justify-content:space-between
+            
       }
       #main-doc{
             margin:10px 0 110px 0;
