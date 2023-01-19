@@ -5,27 +5,39 @@ body{
       padding:0;
       height:100vh;
       border-right: 2px solid black;
-      background-color: #7286D3;
-      color: whitesmoke;
       align-items: left;
       width:255px;
       position:fixed;
       left:0px;
 }
-#navbar2{
-      background-color: #C69749;
-      color: #000000;
-}
 #main-doc{
-      margin:0px 5px 110px 260px;
-      background-color: #FFF2F2;
+      margin:0px 5px 110px 255px;
       display: block;
       align-items: right;
       padding:40px 5px 5px 20px;
 }
+.nav1{
+     background-color: #7286D3; 
+     color: whitesmoke;
+}
+.nav2{
+     background-color: #C69749; 
+     color: black;
+}
+.nav3{
+     background-color: #C84B31; 
+     color: whitesmoke;
+}
+.main-doc1{
+      background-color: #FFF2F2;
+}
 .main-doc2{
       background-color: #282A3A;
       color:whitesmoke;
+}
+.main-doc3{
+      background-color: #ECDBBA;
+      color:black;
 }
 #navbar header{
       font-size: 1.8em;
@@ -47,6 +59,12 @@ body{
       color: whitesmoke;
       /* margin-left:20px; */
 }
+#navbar li:hover{
+      opacity: 0.5;
+}
+#navbar a:active{
+      opacity: 0.;
+}
 #header{
       font-size: 2rem;
       padding: 10px;
@@ -58,27 +76,39 @@ body{
       height: 70vh;
 }
 #button-1{
-      background-color: whitesmoke;
-      border-radius: 20px;
-      border-style: none;
+      background-image:linear-gradient(90deg, #7286D3 50%, #FFF2F2 50%);
+      /* background-image: linear-gradient(0, #7286D3, #FFF2F2); */
+      border-style: solid;
       cursor: pointer;
       width: 35px;
       height: 25px;
-      margin-left: 50px;
 }
 #button-2{
-      background-color: rgb(0, 0, 0);
+      background-image: linear-gradient(90deg, #C69749 50%, #282A3A 50%);
       cursor: pointer;
-      border-style: none;
-      border-radius: 20px;
-      margin-right: 50px;
+      border-style: solid;
       width: 35px;
       height: 25px;
+}
+#button-3{
+      background: linear-gradient(90deg, #C84B31 50%, #ECDBBA 50%);
+      cursor: pointer;
+      border-style: solid grey;
+      width: 35px;
+      height: 25px;
+}
+.code{
+      background-color: rgb(246, 240, 221);
+      padding:20px 0;
 }
 code{
-      padding-left: 15px;
+      padding:0 15px;
       background-color: rgb(246, 240, 221);
       font-size: 0.9rem;
+      color:black;
+}
+#main-section ul li{
+      padding-top: 50px;
 }
 @media screen and (max-width: 500px){
       #navbar{
